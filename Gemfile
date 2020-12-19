@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 source 'https://rubygems.org'
 gem 'unicorn'
 
+
 ruby '2.6.5'
 
 gem 'rails', '~> 5.2.4'
@@ -38,3 +39,6 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'graphql', '<= 1.7'
+gem 'graphiql-rails', '<= 1.5', group: :development
